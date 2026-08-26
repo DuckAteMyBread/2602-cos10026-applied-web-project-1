@@ -6,7 +6,7 @@ on:
 
 jobs:
   validate:
-    # Uses a GitHub-hosted Ubunto machine
+    # Uses a GitHub-hosted Ubuntu machine
     runs-on: ubuntu-latest
 
     steps:
