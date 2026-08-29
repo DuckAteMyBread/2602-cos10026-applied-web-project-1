@@ -16,22 +16,26 @@
                     id="reference" pattern="[a-zA-Z0-9]{6}"
                     required="required"/>
                 </p>
+
                 <p>
                     <label for="name">First name</label>
                     <input type="text" name="name"
                     id="name" pattern="[a-zA-Z]{1,20}" required="required"/>
                 </p>
+
                 <p>
                     <label for="surname">Last name</label>
                     <input type="text" name="surname"
                     id="surname" pattern="[a-zA-Z]{1,20}" required="required"/>
                 </p>
+
                 <p>
                     <label for="DOB"> Date of birth</label>
                     <input type="date" name="DOB"
                     id="DOB" placeholder="dd/mm/yyyy"
                     required="required"/>
                 </p>
+
                 <fieldset>
                     <legend>Gender</legend>
                     <p>
@@ -45,6 +49,16 @@
                         id="female" value="female"/>      
                     </p>  
                 </fieldset>
+                <p>
+                    <label for="address">Street address</label>
+                    <input type="text" name="address"
+                    id="address" pattern="{1,40}" required="required"/>
+                </p>
+                <p>
+                    <label for="suburb">Suburb/Town</label>
+                    <input type="text" name="suburb"
+                    id="suburb" pattern="{1,40}" required="required"/>
+                </p>
             </fieldset>
         </form>
     </body>
