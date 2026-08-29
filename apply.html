@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         <!-- Placeholder Metadata; remove this line on edit -->
-        <title>Apply</title>
+        <title>Job Application</title>
         <meta charset="UTF-8">
-        <meta name="author" content="Your Name">
-        <meta name="keywords" content="keyword1, keyword2, keyword3">
-        <meta name="description" content="Short & accurate description of the webpage.">
+        <meta name="author" content="Anastasia Tiffany">
+        <meta name="keywords" content="Job, application,contact ">
+        <meta name="description" content="A job application form for WWT.">
     </head>
     <body>
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <fieldset>
+                <p>
+                    <label for="reference">Job reference number</label> 
+                    <input type="text" name="reference" 
+                    id="reference" pattern="[a-zA-Z0-9]{6}"
+                    required="required"/>
+                </p>
+                <p>
+                    <label for="name">First name</label>
+                    <input type="text" name="name"
+                    id="name" pattern="[a-zA-Z]{1,20}" required="required"/>
+                </p>
+                <p>
+                    <label for="surname">Last name</label>
+                    <input type="text" name="surname"
+                    id="surname" pattern="[a-zA-Z]{1,20}" required="required"/>
+                </p>
+            </fieldset>
+        </form>
     </body>
 </html> 
