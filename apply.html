@@ -11,28 +11,19 @@
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
             <fieldset>
                 <p>
-                    <label for="reference">Job reference number</label> 
-                    <input type="text" name="reference" 
-                    id="reference" pattern="[a-zA-Z0-9]{6}"
-                    required="required"/>
+                    <label for="reference">Job reference number</label> <input type="text" name="reference" id="reference" pattern="[a-zA-Z0-9]{6}" required="required">
                 </p>
 
                 <p>
-                    <label for="name">First name</label>
-                    <input type="text" name="name"
-                    id="name" pattern="[a-zA-Z]{1,20}" required="required"/>
+                    <label for="name">First name</label> <input type="text" name="name" id="name" pattern="[a-zA-Z]{1,20}" required="required">
                 </p>
 
                 <p>
-                    <label for="surname">Last name</label>
-                    <input type="text" name="surname"
-                    id="surname" pattern="[a-zA-Z]{1,20}" required="required"/>
+                    <label for="surname">Last name</label> <input type="text" name="surname" id="surname" pattern="[a-zA-Z]{1,20}" required="required">
                 </p>
 
                 <p>
-                    <label for="DOB"> Date of birth</label>
-                    <input type="date" name="DOB"
-                    id="DOB" required="required"/>
+                    <label for="dob"> Date of birth</label> <input type="date" name="dob" id="dob" required="required">
                 </p>
 
                 <fieldset>
@@ -40,29 +31,26 @@
                     <p>
                         <label for="male">Male</label>    
                         <input type="radio" name="gender"
-                        id="male" value="male"/>        
+                        id="male" value="male">        
                     </p>
                     <p>
                         <label for="female">Female</label>    
                         <input type="radio" name="gender"
-                        id="female" value="female"/>      
+                        id="female" value="female">      
                     </p>  
                 </fieldset>
                 <p>
-                    <label for="address">Street address</label>
-                    <input type="text" name="address"
-                    id="address" pattern="{1,40}" required="required"/>
+                    <label for="address">Street address</label> <input type="text" name="address" id="address" pattern="{1,40}" required="required">
                 </p>
 
                 <p>
-                    <label for="suburb">Suburb/Town</label>
-                    <input type="text" name="suburb"
-                    id="suburb" pattern="{1,40}" required="required"/>
+                    <label for="suburb">Suburb/Town</label> <input type="text" name="suburb" id="suburb" pattern="{1,40}" required="required">
                 </p>
 
                 <p>
                     <label for="state">State</label>
                     <select name="state" id="state">
+                        <option value=" ">Please select</option>
                         <option value="vic">VIC</option>
                         <option value="nsw">NSW</option>
                         <option value="qld">QLD</option>
@@ -75,44 +63,36 @@
                 </p>
 
                 <p>
-                    <label for="postcode">Postcode</label>
-                    <input type="text" name="postcode"
-                    id="postcode" pattern="[0-9]{4}" required="required"/>
+                    <label for="postcode">Postcode</label> <input type="text" name="postcode" id="postcode" pattern="[0-9]{4}" required="required">
                 </p>
 
                 <p>
-                    <label for="email">Email</label>
-                    <input type ="email" name="email" id="email" required="required"/>
+                    <label for="email">Email</label> <input type ="email" name="email" id="email" required="required">
                 </p>
 
                 <p>
-                    <label for="number">Phone number</label>
-                    <input type="text" name="number" id="number" pattern="[0-9]{8,12}" required="required"/>
+                    <label for="number">Phone number</label> <input type="tel" name="number" id="number" pattern="[0-9]{8,12}" required="required">
                 </p>
                 
                 <fieldset>
                     <legend>Skill list</legend>
                     <p>
-                        <label for="a">A</label>
-                        <input type="checkbox" id="a" name="category[]" value="a"/>
+                        <label for="a">A</label> <input type="checkbox" id="a" name="category[]" value="a">
                     </p>
 
                     <p>
-                        <label for="b">B</label>
-                        <input type="checkbox" id="b" name="category[]" value="b"/>
+                        <label for="b">B</label> <input type="checkbox" id="b" name="category[]" value="b">
                     </p>
 
                     <p>
-                        <label for="c">C</label>
-                        <input type="checkbox" id="c" name="category[]" value="c"/>
+                        <label for="c">C</label> <input type="checkbox" id="c" name="category[]" value="c">
                     </p>
                     <p>
-                        <label for="other">Other skills</label>
-			            <textarea id="other" name="other" rows="4" cols="40"></textarea>
+                        <label for="other">Other skills</label> <textarea id="other" name="other" rows="4" cols="40"></textarea>
                     </p>
                 </fieldset>
             </fieldset>
-            <input type= "submit" value="Apply"/>
+            <input type= "submit" value="Apply">
         </form>
     </body>
 </html> 
