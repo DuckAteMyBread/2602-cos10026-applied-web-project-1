@@ -16,15 +16,66 @@
                     id="reference" pattern="[a-zA-Z0-9]{6}"
                     required="required"/>
                 </p>
+
                 <p>
                     <label for="name">First name</label>
                     <input type="text" name="name"
                     id="name" pattern="[a-zA-Z]{1,20}" required="required"/>
                 </p>
+
                 <p>
                     <label for="surname">Last name</label>
                     <input type="text" name="surname"
                     id="surname" pattern="[a-zA-Z]{1,20}" required="required"/>
+                </p>
+
+                <p>
+                    <label for="DOB"> Date of birth</label>
+                    <input type="date" name="DOB"
+                    id="DOB" required="required"/>
+                </p>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <p>
+                        <label for="male">Male</label>    
+                        <input type="radio" name="gender"
+                        id="male" value="male"/>        
+                    </p>
+                    <p>
+                        <label for="female">Female</label>    
+                        <input type="radio" name="gender"
+                        id="female" value="female"/>      
+                    </p>  
+                </fieldset>
+                <p>
+                    <label for="address">Street address</label>
+                    <input type="text" name="address"
+                    id="address" pattern="{1,40}" required="required"/>
+                </p>
+
+                <p>
+                    <label for="suburb">Suburb/Town</label>
+                    <input type="text" name="suburb"
+                    id="suburb" pattern="{1,40}" required="required"/>
+                </p>
+                <p>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="vic">VIC</option>
+                        <option value="nsw">NSW</option>
+                        <option value="qld">QLD</option>
+                        <option value="nt">NT</option>
+                        <option value="wa">WA</option>
+                        <option value="sa">SA</option>
+                        <option value="tas">TAS</option>
+                        <option value="act">ACT</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" name="postcode"
+                    id="postcode" pattern="[0-9]{4}" required="required"/>
                 </p>
             </fieldset>
         </form>
