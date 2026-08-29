@@ -32,8 +32,7 @@
                 <p>
                     <label for="DOB"> Date of birth</label>
                     <input type="date" name="DOB"
-                    id="DOB" placeholder="dd/mm/yyyy"
-                    required="required"/>
+                    id="DOB" required="required"/>
                 </p>
 
                 <fieldset>
@@ -54,10 +53,29 @@
                     <input type="text" name="address"
                     id="address" pattern="{1,40}" required="required"/>
                 </p>
+
                 <p>
                     <label for="suburb">Suburb/Town</label>
                     <input type="text" name="suburb"
                     id="suburb" pattern="{1,40}" required="required"/>
+                </p>
+                <p>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="vic">VIC</option>
+                        <option value="nsw">NSW</option>
+                        <option value="qld">QLD</option>
+                        <option value="nt">NT</option>
+                        <option value="wa">WA</option>
+                        <option value="sa">SA</option>
+                        <option value="tas">TAS</option>
+                        <option value="act">ACT</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" name="postcode"
+                    id="postcode" pattern="[0-9]{4}" required="required"/>
                 </p>
             </fieldset>
         </form>
