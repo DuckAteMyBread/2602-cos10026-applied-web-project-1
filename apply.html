@@ -89,7 +89,30 @@
                     <label for="number">Phone number</label>
                     <input type="text" name="number" id="number" pattern="[0-9]{8,12}" required="required"/>
                 </p>
+                
+                <fieldset>
+                    <legend>Skill list</legend>
+                    <p>
+                        <label for="a">A</label>
+                        <input type="checkbox" id="a" name="category[]" value="a"/>
+                    </p>
+
+                    <p>
+                        <label for="b">B</label>
+                        <input type="checkbox" id="b" name="category[]" value="b"/>
+                    </p>
+
+                    <p>
+                        <label for="c">C</label>
+                        <input type="checkbox" id="c" name="category[]" value="c"/>
+                    </p>
+                    <p>
+                        <label for="other">Other skills</label>
+			            <textarea id="other" name="other" rows="4" cols="40"></textarea>
+                    </p>
+                </fieldset>
             </fieldset>
+            <input type= "submit" value="Apply"/>
         </form>
     </body>
 </html> 
