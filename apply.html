@@ -59,6 +59,7 @@
                     <input type="text" name="suburb"
                     id="suburb" pattern="{1,40}" required="required"/>
                 </p>
+
                 <p>
                     <label for="state">State</label>
                     <select name="state" id="state">
@@ -72,10 +73,21 @@
                         <option value="act">ACT</option>
                     </select>
                 </p>
+
                 <p>
                     <label for="postcode">Postcode</label>
                     <input type="text" name="postcode"
                     id="postcode" pattern="[0-9]{4}" required="required"/>
+                </p>
+
+                <p>
+                    <label for="email">Email</label>
+                    <input type ="email" name="email" id="email" required="required"/>
+                </p>
+
+                <p>
+                    <label for="number">Phone number</label>
+                    <input type="text" name="number" id="number" pattern="[0-9]{8,12}" required="required"/>
                 </p>
             </fieldset>
         </form>
