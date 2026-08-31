@@ -1,0 +1,10 @@
+/* CSS HEX */
+--jet-black: #12343bff;
+--grapefruit-pink: #ff6b6bff;
+--light-cyan: #d9f0f2ff;
+--white: #ffffffff;
+--jet-black-2: #263238ff;
+--tuscan-sun: #f9c74fff;
+--porcelain: #fafaf7ff;
+
+https://coolors.co/12343b-ff6b6b-d9f0f2-ffffff-263238-f9c74f-fafaf7
