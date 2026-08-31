@@ -11,14 +11,15 @@
         <link rel="stylesheet" href="styles/index.css">
     </head>
     <body>
+      <article>
         <header>
-          <img src="images/tourism_logo.png" alt="World Wide Travel logo" title="World Wide Travel" style="width: 30%; height:auto;">
+          <img id="logo" src="images/tourism_logo.png" alt="World Wide Travel logo" title="World Wide Travel" style="width: 25%; height:auto;">
             <h1 id="name">World Wide Travel</h1>
              <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="job.html">Job Description</a>
-            <a href="apply.html">Apply</a>
-            <a href="about.html">About Us</a>
+            <a id="menu" href="index.html">Home</a>
+            <a id="menu" href="job.html">Job Description</a>
+            <a id="menu" href="apply.html">Apply</a>
+            <a id="menu" href="about.html">About Us</a>
         </nav>
         <p id="slogan">Taking You Around the World</p>
         <p id="description"> The best online platforms for destination information, tour bookings, accommodation services and personalised travel planning.</p>
@@ -41,6 +42,7 @@
             <a href="mailto:info@worldwidetravel.com">info@worldwidetravel.com</a>
         </footer>
     </body>
+</article>
 
      <style>
       footer {
@@ -67,6 +69,18 @@
 
       #nav a:hover {
         background-color: #fdb204;
+      }
+
+      #name {
+        float:right;
+      }
+
+      #logo {
+        text-align: left;
+      }
+
+      article {
+        min-width: 30em;
       }
     </style>
 
