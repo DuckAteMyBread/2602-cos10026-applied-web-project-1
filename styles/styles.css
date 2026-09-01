@@ -1,37 +1,17 @@
 
 footer {
-      background-image: url('../images/plaque.png');
-      /* go back one directory and then into the images folder to find the plaque.png image */
-      /* no repeat for background */
-      background-repeat: no-repeat;
-      /* center the background image */
-      background-position: center;
-      /* set the background size to cover the entire footer */
-      background-size: 100% 100%;
-      /* set the height of the footer  */
 
-
-      min-height: 200px;
-      box-sizing: border-box;
-
-      text-align: center;
       color: white;
-      font-size: 0.8em;
+      background-color: rgb(100, 81, 0);
 
-      padding: 10px;
+      padding: 20px; 
 }
 
-footer #acknowledgements {
-      margin-right: 30px;
-      margin-left: 10px;
-      padding-top: 50px;
-      padding-left: 110px;
+ footer #acknowledgements {
+      text-align: center;
+      font-size: 14px;
+    
 
-}
+} 
 
-footer #artist {
-      margin-left: 30px;
-      padding-top: 1px;
-      padding-left: 70px;
-      padding-right: 70px;
-}
+
