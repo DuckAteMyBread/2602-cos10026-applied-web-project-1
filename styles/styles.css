@@ -4,7 +4,6 @@ footer {
       color: white;
       background-color: rgb(100, 81, 0);
       /* change colour later */
-
       padding: 20px; 
 }
 
@@ -23,4 +22,16 @@ footer #social {
       margin-top: 10px;
 }
 
+#logo {
+      margin: auto;
+      width: 100px;
+      height: auto;
+      float: left;
+}
+
+
+#name {
+      margin-right: 30px;
+
+}
 
