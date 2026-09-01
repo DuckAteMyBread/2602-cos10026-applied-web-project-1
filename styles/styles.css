@@ -1,6 +1,6 @@
 
 footer {
-      background-image: url('images/plaque.png');
+      background-image: url('../images/plaque.png');
       /* no repeat for background */
       background-repeat: no-repeat;
       /* center the background image */
