@@ -1,6 +1,7 @@
 
 footer {
       background-image: url('../images/plaque.png');
+      /* go back one directory and then into the images folder to find the plaque.png image */
       /* no repeat for background */
       background-repeat: no-repeat;
       /* center the background image */
@@ -9,5 +10,16 @@ footer {
       background-size: cover;
       /* set the height of the footer  */
       height: 200px;
-
+      text-align: center;
+      color: white;
+      font-size: 0.8em;
+      padding: 25px;
 }
+
+footer #acknowledgements {
+      margin: 0;
+      padding-top: 50px;
+      padding-left: 70px;
+      padding-right: 75px;
+}
+
