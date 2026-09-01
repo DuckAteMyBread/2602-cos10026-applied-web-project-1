@@ -7,19 +7,26 @@ footer {
       /* center the background image */
       background-position: center;
       /* set the background size to cover the entire footer */
-      background-size: cover;
+      background-size: 100% 100%;
       /* set the height of the footer  */
-      height: 200px;
+
+
+      min-height: 200px;
+      box-sizing: border-box;
+
       text-align: center;
       color: white;
       font-size: 0.8em;
-      padding: 25px;
+
+      padding: 10px;
 }
 
 footer #acknowledgements {
-      margin: 0;
+      margin-right: 30px;
+      margin-left: 10px;
       padding-top: 50px;
-      padding-left: 150px;
+      padding-left: 110px;
+
 }
 
 footer #artist {
