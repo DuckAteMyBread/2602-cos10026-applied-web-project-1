@@ -8,3 +8,40 @@
 --porcelain: #fafaf7ff;
 
 https://coolors.co/12343b-ff6b6b-d9f0f2-ffffff-263238-f9c74f-fafaf7
+
+
+dont ressize image with inline css
+image grid {
+    display:grid;
+    grid-template-columns: repeat{auto-fit,minmax(150px,1fr)};
+    gap: 10px;
+}
+
+pic {
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display:flex;
+    justify-content: flex-start;
+
+}
+
+
+
+make it responsize 
+
+image as backrounbd 
+have div in section 
+{ 
+    display: flex;
+    justify-content: center;
+}
+
+
+add hover element to table 
+table for 
