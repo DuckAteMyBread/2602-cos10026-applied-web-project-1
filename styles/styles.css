@@ -10,8 +10,11 @@ footer {
  footer #acknowledgements {
       text-align: center;
       font-size: 14px;
-    
-
 } 
+
+footer #copyright {
+      text-align: center;
+      font-size: 14px;
+}
 
 
