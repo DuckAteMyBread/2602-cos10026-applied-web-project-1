@@ -62,34 +62,40 @@ nav {
     display: flex;
     gap: 25px;
 }
- nav #menu {
+ nav a {
       text-decoration: none;
       font-weight: bold;
       color: #263238;
     
  }
 
- nav #menu:hover {
+ nav a:hover {
       color: #b56b45;
  }
 
  /* responsive design */
  @media only screen and (max-width: 800px) {
+      /* adjust the header and nav layout for smaller screens */
 
     .header-box {
         flex-direction: column;
+        /* stack the logo and navigation vertically on smaller screens */
+
     }
 
     header #name {
         margin: 10px 0;
+        /* add some spacing between the logo and navigation on smaller screens */
     }
 
     nav {
         margin: 10px 0 0;
 
         flex-wrap: wrap;
+        /* center the navigation links on smaller screens */
 
         justify-content: center;
+        /* flex center the content on smaller screens */
 
         gap: 15px;
     }
