@@ -59,3 +59,15 @@ header h1 {
     font-size: 1.8rem;
     color: #365f52;
 }
+
+/* navigation */
+nav {
+    margin-left: auto;
+
+    display: flex;
+    gap: 25px;
+}
+ nav menu {
+      text-decoration: none;
+    
+ }
