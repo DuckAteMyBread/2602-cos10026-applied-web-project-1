@@ -38,6 +38,7 @@ header {
     margin: auto;
 
     display: flex;
+    /* use flexbox to align the logo and navigation horizontally */
     align-items: center;
 
     padding: 15px 30px;
@@ -71,6 +72,17 @@ nav {
 
  nav a:hover {
       color: #b56b45;
+ }
+
+ /* main content */
+.content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+
+      text-align: center;
+      display: flex;
+      justify-content: center;
  }
 
  /* responsive design */
