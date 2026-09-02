@@ -67,7 +67,8 @@ nav {
     display: flex;
     gap: 25px;
 }
- nav menu {
+ nav #menu {
       text-decoration: none;
+      font-weight: bold;
     
  }
