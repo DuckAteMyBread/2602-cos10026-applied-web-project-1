@@ -1,0 +1,166 @@
+
+* {
+    box-sizing: border-box;
+}
+/* footer */
+footer {
+
+      color: white;
+      background-color: rgb(100, 81, 0);
+      /* change colour later */
+      padding: 20px; 
+}
+
+ footer #acknowledgements {
+      text-align: center;
+      font-size: 14px;
+} 
+
+footer #copyright {
+      text-align: center;
+      font-size: 14px;
+}
+
+footer #social {
+      text-align: center;
+      margin-top: 10px;
+}
+
+/* header */
+
+header {
+    background-color: #f9c74fff;
+    
+    border-bottom: 1px solid #ddd;
+}
+
+.header-box {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    /* use flexbox to align the logo and navigation horizontally */
+    align-items: center;
+
+    padding: 15px 30px;
+}
+
+.logo {
+    width: 200px; 
+    height: auto;
+}
+
+header #name {
+    margin: 0 30px 0 15px;
+
+    font-size: 1.8rem;
+    color: #365f52;
+}
+
+/* navigation */
+nav {
+    margin-left: auto;
+
+    display: flex;
+    gap: 25px;
+}
+ nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #263238;
+    
+ }
+
+ nav a:hover {
+      color: #b56b45;
+ }
+
+ /* main content */
+.content {
+      min-height: 350px;
+
+      background-image: url('../images/airplane.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      padding: 30px;
+
+      color: black;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+      flex-direction: column;
+
+ }
+
+
+
+ .content #slogan {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #FFF4DE;
+ }
+
+ .content #description { 
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      color: #FFF4DE;
+
+      line-height: 1.5;
+      /* adjust line height for better readability */
+      max-width: 450px;
+      /* allow text to wrap on smaller screens */
+ }
+
+ /*destination */
+
+
+ /* responsive design */
+ @media only screen and (max-width: 800px) {
+      /* adjust the header and nav layout for smaller screens */
+
+    .header-box {
+        flex-direction: column;
+        /* stack the logo and navigation vertically on smaller screens */
+
+    }
+
+    header #name {
+        margin: 10px 0;
+        /* add some spacing between the logo and navigation on smaller screens */
+    }
+
+    nav {
+        margin: 10px 0 0;
+
+        flex-wrap: wrap;
+        /* center the navigation links on smaller screens */
+
+        justify-content: center;
+        /* flex center the content on smaller screens */
+
+        gap: 15px;
+    }
+ }
+
+ @media only screen and (max-width: 500px) {
+      /* adjust the header and nav layout for very small screens */
+
+    .content {
+        min-height: 400px;
+    }
+
+    .content #slogan {
+        font-size: 2rem;
+    }
+
+    .content #description {
+        font-size: 1rem;
+    }
+
+ }
