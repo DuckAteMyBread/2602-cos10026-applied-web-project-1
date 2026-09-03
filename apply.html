@@ -6,19 +6,23 @@
         <meta name="author" content="Anastasia Tiffany">
         <meta name="keywords" content="Job, application,contact ">
         <meta name="description" content="A job application form for WWT.">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
         <header>
-            <h1>Job Application</h1>
+
+            <div class="header-box">
+                <img src="images/tourism_logo.png" alt="World Wide Travel logo" title="World Wide Travel" class="logo">
+                <h1 id="name">World Wide Travel</h1>
+
+            <nav id="nav">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Job Description</a>
+                <a href="apply.html">Apply</a>
+                <a href="about.html">About Us</a>
+            </nav>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="apply.html">Apply</a></li>
-                <li><a href="about.html">About us</a></li>
-            </ul>
-        </nav>
 
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
             <fieldset>
@@ -106,5 +110,22 @@
             </fieldset>
             <input type= "submit" value="Apply">
         </form>
+        <footer> 
+            <p id="acknowledgements">World Wide Travel acknowledges the Traditional Owners, the Wurundjeri people of the Kulin Nation, on whose land we meet, share and work. We pay our respects to Elders past and present, and extend our respect to Aboriginal and Torres Strait Islander people from all nations of this land.We would like to acknowledge the Traditional Owners of the land on which we work and live, and pay our respects to their Elders past, present and emerging.</p>
+            <br>
+        <div id="social">
+            <a href="https://uharper.atlassian.net/jira/software/projects/AWP1/boards/3/backlog?epics=visible&atlOrigin=eyJpIjoiODY4NjkyOTJmODA4NDVhMDhlZWUyZDNhNjAwM2IwZTMiLCJwIjoiaiJ9">
+                <img src="images/jira.png" alt="Jira" class="social-icon"
+                style="width: 2%; height:auto;" ></a>
+            <a href="https://github.com/DuckAteMyBread/2602-cos10026-applied-web-project-1">
+                <img src="images/github.png" alt="GitHub" class="social-icon"
+                style="width:2%; height:auto;" ></a>
+            <a href="mailto:info@worldwidetravel.com">
+                <img src="images/email.png" alt="Email" class="social-icon"
+                style="width:2%; height:auto;" ></a>
+            <br>
+            <p id="copyright">Copyright &copy; 2026 World Wide Travel. All rights reserved.</p>
+        </div>
+        </footer>
     </body>
 </html> 
