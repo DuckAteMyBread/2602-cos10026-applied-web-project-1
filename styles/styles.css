@@ -116,6 +116,13 @@ nav {
       /* allow text to wrap on smaller screens */
  }
 
+ /*destination */
+ .destination img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
 
  /* responsive design */
  @media only screen and (max-width: 800px) {
