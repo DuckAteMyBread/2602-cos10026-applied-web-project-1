@@ -118,13 +118,7 @@ nav {
  }
 
  /*destination */
-.card {
-    width: 100%;
-    height: 20px;
-    size: 30px;
 
-   
-}
 
  /* responsive design */
  @media only screen and (max-width: 800px) {
