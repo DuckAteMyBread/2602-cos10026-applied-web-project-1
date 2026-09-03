@@ -6,14 +6,14 @@
 footer {
 
       color: white;
-      background-color: rgb(100, 81, 0);
+      background-color: #323232;
       /* change colour later */
       padding: 20px; 
 }
 
  footer #acknowledgements {
       text-align: center;
-      font-size: 14px;
+      font-size: 18px;
 } 
 
 footer #copyright {

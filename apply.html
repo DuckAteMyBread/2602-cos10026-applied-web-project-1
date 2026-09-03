@@ -8,11 +8,22 @@
         <meta name="description" content="A job application form for WWT.">
     </head>
     <body>
-        <h1>Job Application</h1>
+        <header>
+            <h1>Job Application</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
             <fieldset>
                 <p>
-                    <label for="reference">Job reference number</label> <input type="text" name="reference" id="reference" pattern="[a-zA-Z0-9]{6}" required="required">
+                    <label for="reference">Job reference number</label> <input type="text" name="reference" id="reference" pattern="[a-zA-Z0-9]{6}" title="Exactly 6 alphanumeric characters" required="required">
                 </p>
 
                 <p>
