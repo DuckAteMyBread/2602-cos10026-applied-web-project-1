@@ -1,11 +1,6 @@
 # COS10026 Web Technology Project
 
-## Scenario
-A tourism and travel technology platform needs a website to advertise job vacancies. The website must contain the following four connected pages:
-* [Home](index.html)
-* [Job Description](jobs.html)
-* [Apply](apply.html)
-* [About](about.html)
+A group-made website for a fictional tourism and travel technology platform that needs a website to advertise job vacancies. 
 
 ## Attribution
 | Name | Description | License |
