@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         <!-- Placeholder Metadata; remove this line on edit -->
-        <title>Apply</title>
+        <title>Job Application</title>
         <meta charset="UTF-8">
-        <meta name="author" content="Your Name">
-        <meta name="keywords" content="keyword1, keyword2, keyword3">
-        <meta name="description" content="Short & accurate description of the webpage.">
+        <meta name="author" content="Anastasia Tiffany">
+        <meta name="keywords" content="Job, application,contact ">
+        <meta name="description" content="A job application form for WWT.">
     </head>
     <body>
+        <h1>Job Application</h1>
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <fieldset>
+                <p>
+                    <label for="reference">Job reference number</label> <input type="text" name="reference" id="reference" pattern="[a-zA-Z0-9]{6}" required="required">
+                </p>
+
+                <p>
+                    <label for="name">First name</label> <input type="text" name="name" id="name" pattern="[a-zA-Z]{1,20}" required="required">
+                </p>
+
+                <p>
+                    <label for="surname">Last name</label> <input type="text" name="surname" id="surname" pattern="[a-zA-Z]{1,20}" required="required">
+                </p>
+
+                <p>
+                    <label for="dob"> Date of birth</label> <input type="date" name="dob" id="dob" required="required">
+                </p>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <p>
+                        <label for="male">Male</label>    
+                        <input type="radio" name="gender"
+                        id="male" value="male">        
+                    </p>
+                    <p>
+                        <label for="female">Female</label>    
+                        <input type="radio" name="gender"
+                        id="female" value="female">      
+                    </p>  
+                </fieldset>
+                <p>
+                    <label for="address">Street address</label> <input type="text" name="address" id="address" pattern="{1,40}" required="required">
+                </p>
+
+                <p>
+                    <label for="suburb">Suburb/Town</label> <input type="text" name="suburb" id="suburb" pattern="{1,40}" required="required">
+                </p>
+
+                <p>
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value=" ">Please select</option>
+                        <option value="vic">VIC</option>
+                        <option value="nsw">NSW</option>
+                        <option value="qld">QLD</option>
+                        <option value="nt">NT</option>
+                        <option value="wa">WA</option>
+                        <option value="sa">SA</option>
+                        <option value="tas">TAS</option>
+                        <option value="act">ACT</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="postcode">Postcode</label> <input type="text" name="postcode" id="postcode" pattern="[0-9]{4}" required="required">
+                </p>
+
+                <p>
+                    <label for="email">Email</label> <input type ="email" name="email" id="email" required="required">
+                </p>
+
+                <p>
+                    <label for="number">Phone number</label> <input type="tel" name="number" id="number" pattern="[0-9]{8,12}" required="required">
+                </p>
+                
+                <fieldset>
+                    <legend>Skill list</legend>
+                    <p>
+                        <label for="solving">Problem Solving</label> <input type="checkbox" id="solving" name="category[]" value="solving">
+                    </p>
+
+                    <p>
+                        <label for="service">Customer Service</label> <input type="checkbox" id="service" name="category[]" value="service">
+                    </p>
+
+                    <p>
+                        <label for="communication">Communication</label> <input type="checkbox" id="communication" name="category[]" value="communication">
+                    </p>
+                    <p>
+                        <label for="other">Other skills</label> <textarea id="other" name="other" rows="4" cols="40"></textarea>
+                    </p>
+                </fieldset>
+            </fieldset>
+            <input type= "submit" value="Apply">
+        </form>
     </body>
 </html> 

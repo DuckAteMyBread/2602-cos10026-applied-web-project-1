@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-         <!-- Placeholder Metadata; remove this line on edit -->
         <title>Jobs</title>
         <meta charset="UTF-8">
-        <meta name="author" content="Your Name">
-        <meta name="keywords" content="keyword1, keyword2, keyword3">
+        <meta name="author" content="Nathan Yan">
+        <meta name="keywords" content="tourism, travel, jobs, employment, career">
         <meta name="description" content="Short & accurate description of the webpage.">
+
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
+        <header>
+            <h1>We're hiring!</h1>
+        </header>
+
+        <nav>
+            <!-- Update in about.html, apply.html, index.html, jobs.html on change -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="jobs.html">Jobs</a>
+                    <ul>
+                        <li><a href="jobs.html#job-abc123">Job title</a></li>
+                    </ul>
+                </li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h2>Additional information</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </aside>
+
+        <main>
+            <!-- Job positions to be listed below in sections -->
+            <section class="job-position" id="job-abc123">
+                <h2 class="job-title">Job title</h2>
+                <p class="job-ref-id">#ABC123</p>
+                <p class="job-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <section class="job-salary">
+                    <h3>Salary</h3>
+                    <p>$XX,XXX - $XX,XXX</p>
+                </section>
+                <section class="job-rep-line">
+                    <h3>Reporting line</h3>
+                    <p>Reports to: [Job title]</p>
+                </section>
+                <section class="job-resp">
+                    <h3>Key responsibilities</h3>
+                    <ul>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    </ul>
+                </section>
+                <section class="job-req-ess">
+                    <h3>Essential Requirements</h3>
+                    <ol>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    </ol>
+                </section>
+                <section class="job-req-pref">
+                    <h3>Preferable Requirements</h3>
+                    <ol>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    </ol>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Update in about.html, apply.html, index.html, jobs.html on change -->
+        </footer>
     </body>
 </html> 
