@@ -120,6 +120,22 @@ nav {
  /*destination */
 
 
+.destination img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 50%;
+}
+
+.destination-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+
+
+
  /* responsive design */
  @media only screen and (max-width: 800px) {
       /* adjust the header and nav layout for smaller screens */
