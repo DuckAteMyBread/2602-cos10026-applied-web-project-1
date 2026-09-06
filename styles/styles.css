@@ -1,6 +1,8 @@
 
 * {
     box-sizing: border-box;
+    /* set element to fix the size of webpage */
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* footer */
 footer {
@@ -14,6 +16,7 @@ footer {
  footer #acknowledgements {
       text-align: center;
       font-size: 18px;
+      line-height: 1.5;
 } 
 
 footer #copyright {
@@ -80,7 +83,7 @@ nav {
  }
 
  nav a:hover {
-      color: #b56b45;
+      color: #F9C74F;
  }
 
  /* main content */
@@ -93,12 +96,11 @@ nav {
       background-repeat: no-repeat;
 
       padding: 30px;
-
-      color: black;
-
       display: flex;
       align-items: center;
+      /* center element vertically */
       justify-content: center;
+      /* center element horizontally */
 
       text-align: center;
       flex-direction: column;
@@ -136,14 +138,20 @@ nav {
 .destination-box {
     gap: 20px;
     display: flex;
+    /* allow card to flex with webpage size */
+
     max-width: 1200px;
+    /* max width of border box */
 
 }
 
 .destination-card img {
     width: 100%;
+    /* strech images to fit the border box */
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; 
+    /* stop images from being squish when fit into border */
+
 
 }
 
@@ -151,6 +159,7 @@ nav {
     text-align: center;
     margin-bottom: 40px;
     font-size: 25px;
+    color: #12343B;
 }
 
 .destination-card {
@@ -163,6 +172,8 @@ nav {
     border-radius: 8px;
 
     overflow: hidden;
+    /* hide extra images to fit in border box */
+
 
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 
@@ -176,7 +187,7 @@ nav {
 }
 
 .destination-card h4 {
-    color: red;
+    color: #895053;
     font-size: 25px;
     font-weight: bold;
 }  
@@ -188,13 +199,11 @@ nav {
 .destination img {
     width: 100%;
     height: auto;
-    display: block;
     max-width: 50%;
 }
 
 .destination-grid {
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
 }
 
@@ -203,6 +212,7 @@ nav {
 
 .services th {
     font-size: 18px;
+    color: #323232;
 }
 
 th, td { 
@@ -226,6 +236,7 @@ th, td {
 .services h3 {
     text-align: center;
     font-size: 30px;
+    color: #12343B;
 }
 
 .services {
@@ -244,7 +255,7 @@ th, td {
 }
 
 .services .sers:hover {
-    background-color: #b56b45;
+    background-color: #F9C74F;
     text-decoration: underline;
 }
 
@@ -292,11 +303,11 @@ th, td {
     }
 
     .content #slogan {
-        font-size: 3px;
+        font-size: 32px;
     }
 
     .content #description {
-        font-size: 2px;
+        font-size: 16px;
     }
 
 }
