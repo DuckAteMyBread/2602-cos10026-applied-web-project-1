@@ -113,13 +113,17 @@ nav {
       font-size: 2em;
       font-weight: bold;
       margin-bottom: 15px;
-      color: #FFF4DE;
+      color: white;  
+      background-color: rgba(208, 210, 255, 0.55);
+  
+      
  }
 
  .content #description { 
       font-size: 1.3em;
       margin-bottom: 30px;
-      color: #FFF4DE;
+      color: white;
+      background-color: rgba(208, 210, 255, 0.55);
 
       line-height: 1.5;
       /* adjust line height for better readability */
