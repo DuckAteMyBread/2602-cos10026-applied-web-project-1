@@ -237,23 +237,6 @@ th, td {
     background-color: white;
 }
 
-.services h3 {
-    text-align: center;
-    font-size: 30px;
-    color: #12343B;
-}
-
-.services {
-   
-    background-color: #E0F1F5;
-    padding: 100px 30px;
-
-}
-
-.services .ser {
-    background-color: #FAFAF7;
-}
-
 .services .sers {
     background-color: #FAFAF7;
 }
