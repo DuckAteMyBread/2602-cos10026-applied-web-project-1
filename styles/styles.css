@@ -332,13 +332,6 @@ td {
 
     background: var(--color-bg-section);
 }
-body:has(.job-highlight-ref:hover) .job-ref-id {
-    /* Highlight on hover inspired by:
-    https://stackoverflow.com/a/74816531
-    Accessed: 07 Sep 2026 */
-    font-weight: bold;
-    color: var(--color-text-highlight);
-}
 #jump-to-top {
     color: var(--color-text-dark);
     text-align: center;
