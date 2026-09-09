@@ -1,47 +1,49 @@
 /*
-
 filename: styles.css
-
 author: Anastasia Tiffany, Harper Lam, Nathan Yan and Son Khoi Nguyen
-
 created:  3 September 2026
-
 last modified: ?? September 2026
-
 description: lab05.html
-
-
 */
+<<<<<<< HEAD
+=======
+
+/* -------------------------
+    Global styles and presets
+    - All elements
+------------------------- */
+>>>>>>> 72ad70c (docs(styles): title global styles and presets)
 * {
     box-sizing: border-box;
-    /* set element to fix the size of webpage */
     font-family: Arial, Helvetica, sans-serif;
 }
-/* footer */
+
+/* -------------------------
+    Shared element styles
+    - footer
+    - header
+------------------------- */
+/* Footer styles */
 footer {
+    padding: 20px;
 
-      color: white;
-      background-color: #263238;
-      /* change colour later */
-      padding: 20px; 
+    color: white;
+    background-color: #263238;
 }
-
- footer #acknowledgements {
-      text-align: center;
-      font-size: 18px;
-      line-height: 1.5;
-} 
-
+footer #acknowledgements {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+}
 footer #copyright {
-      text-align: center;
-      font-size: 14px;
+    text-align: center;
+    font-size: 14px;
 }
-
 footer #social {
-      text-align: center;
-      margin-top: 10px;
-}
+    margin-top: 10px;
 
+    text-align: center;
+}
 #logo-small {
     display: block;
     width: 60px;
@@ -49,31 +51,22 @@ footer #social {
     margin: auto;
 }
 
-
-/* header */
-
+/* Header styles */
 header {
-    background-color: #12343B;
-    
     border-bottom: 1px solid #ddd;
+    background-color: #12343B;
 }
-
 .header-box {
-    max-width: 1200px;
-    margin: auto;
-
     display: flex;
-    /* use flexbox to align the logo and navigation horizontally */
     align-items: center;
-
+    max-width: 1200px;
     padding: 15px 30px;
+    margin: auto;
 }
-
 .logo {
-    width: 200px; 
     height: auto;
+    width: 200px;
 }
-
 header #name {
     margin: 0 30px 0 15px;
 
@@ -81,233 +74,202 @@ header #name {
     color: white;
 }
 
-/* navigation */
+/* Navigation */
 nav {
-    margin-left: auto;
-
     display: flex;
     gap: 25px;
+    margin-left: auto;
 }
- nav a {
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-    
- }
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+nav a:hover {
+    color: #F9C74F;
+}
 
- nav a:hover {
-      color: #F9C74F;
- }
-
- /* main content */
+/* -------------------------
+    index.html styles
+    - content
+    - destinations
+    - services
+------------------------- */
+/* Content */
 .content {
-      min-height: 350px;
-
-      background-image: url('../images/airplane.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-      padding: 30px;
-      display: flex;
-      align-items: center;
-      /* center element vertically */
-      justify-content: center;
-      /* center element horizontally */
-
-      text-align: center;
-      flex-direction: column;
-
- }
-
-
-
- .content #slogan {
-      font-size: 2em;
-      font-weight: bold;
-      margin-bottom: 15px;
-      color: white;  
-      background-color: rgba(208, 210, 255, 0.55);
-  
-      
- }
-
- .content #description { 
-      font-size: 1.3em;
-      margin-bottom: 30px;
-      color: white;
-      background-color: rgba(208, 210, 255, 0.55);
-
-      line-height: 1.5;
-      /* adjust line height for better readability */
-      max-width: 450px;
-      /* allow text to wrap on smaller screens */
- }
-
- /*destination */
-
-.destinations {
-    margin: auto;
-    background-color: #F0F8FA;
-    padding: 70px 30px;
-}
-
-.destination-box {
-    gap: 20px;
     display: flex;
-    /* allow card to flex with webpage size */
+    flex-direction: column;
+    min-height: 350px;
+    padding: 30px;
+    /* Centre horizontally */
+    align-items: center;
+    /* Centre vertically */
+    justify-content: center;
 
-    max-width: 1200px;
-    /* max width of border box */
+    background-image: url('../images/airplane.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    text-align: center;
+}
+.content #slogan {
+    margin-bottom: 15px;
+
+    background-color: rgba(208, 210, 255, 0.55);
+
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.content #description {
+    /* Limit text width for readability */
+    max-width: 450px;
+    margin-bottom: 30px;
+
+    background-color: rgba(208, 210, 255, 0.55);
+
+    /* Adjust line height for better readability */
+    line-height: 1.5;
+    font-size: 1.3em;
+    color: white;
 }
 
+/* Destinations */
+.destinations {
+    padding: 70px 30px;
+    margin: auto;
+
+    background-color: #F0F8FA;
+}
+.destination-box {
+    /* Allow card to flex with webpage size */
+    display: flex;
+    gap: 20px;
+    /* Max width of border box */
+    max-width: 1200px;
+}
 .destination-card img {
     width: 100%;
-    /* strech images to fit the border box */
     height: 200px;
-    object-fit: cover; 
-    /* stop images from being squish when fit into border */
-
-
+    /* Crop the image to fill the fixed-height container */
+    object-fit: cover;
 }
-
 .destinations > h3 {
-    text-align: center;
     margin-bottom: 40px;
     font-size: 25px;
+    text-align: center;
     color: #12343B;
 }
-
 .destination-card {
-    width: 100%;
     flex: 1;
-    /* flex 1 allows the cards to grow and shrink equally */
+    width: 100%;
+    /* Allow the cards to grow and shrink equally */
+    padding-bottom: 25px;
+    border-radius: 8px;
+    /* Clip content to the rounded card border */
+    overflow: hidden;
 
     background-color: white;
 
-    border-radius: 8px;
-
-    overflow: hidden;
-    /* hide extra images to fit in border box */
-
-
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-
-    padding-bottom: 25px;
 }
-
 .destination-card h4,
-.destination-card p{
+.destination-card p {
     margin-left: 25px;
     margin-right: 25px;
 }
-
 .destination-card h4 {
-    color: #895053;
-    font-size: 25px;
     font-weight: bold;
-}  
-
+    font-size: 25px;
+    color: #895053;
+}
 .destination-card p {
     line-height: 1.3;
 }
-
 .destination img {
-    width: 100%;
     height: auto;
+    width: 100%;
     max-width: 50%;
 }
-
 .destination-grid {
-    display:grid;
+    display: grid;
     gap: 10px;
 }
 
-/* services */
-
-
+/* Services */
 .services th {
     font-size: 18px;
     color: #263238;
 }
-
-th, td { 
+th,
+td {
     padding: 15px;
     border: 1px solid #ddd;
+
     background-color: white;
 }
-
-
 .services table {
     width: 80%;
-    margin: auto;
     border: 1px solid #ddd;
     border-radius: 15px;
-    overflow: hidden;
-    /* hide extra border */
     border-spacing: 0;
+    margin: auto;
+
+    /* Hide extra border */
+    overflow: hidden;
+
     background-color: white;
 }
-
 .services .sers {
     background-color: #FAFAF7;
 }
-
 .services .sers:hover {
     background-color: #F9C74F;
     text-decoration: underline;
 }
 
- /* responsive design */
- @media only screen and (max-width: 800px) {
-      /* adjust the header and nav layout for smaller screens */
-
+/* -------------------------
+    Responsive design
+    - small screens (to 800px)
+    - very small screens (to 500px)
+------------------------- */
+@media only screen and (max-width: 800px) {
+    /* Responsive design for small screens up to 800px */
     .header-box {
+        /* Stack the logo and navigation vertically on smaller screens */
         flex-direction: column;
-        /* stack the logo and navigation vertically on smaller screens */
-
     }
-
     header #name {
+        /* Adds logo-navigation spacing on smaller screens */
         margin: 10px 0;
-        /* add some spacing between the logo and navigation on smaller screens */
     }
-
     nav {
-        margin: 10px 0 0;
-
+        /* Centre navigation links */
         flex-wrap: wrap;
-        /* center the navigation links on smaller screens */
-
         justify-content: center;
-        /* flex center the content on smaller screens */
-
+        margin: 10px 0 0;
         gap: 15px;
     }
 
+    /* index.html responsive design */
     .destination-box {
         flex-direction: column;
     }
-
     .destination img {
         height: 250px;
     }
- }
+}
 
- @media only screen and (max-width: 500px) {
-      /* adjust the header and nav layout for very small screens */
-
+@media only screen and (max-width: 500px) {
+    /* Responsive design for very small screens up to 500px */
     .content {
         min-height: 400px;
     }
-
     .content #slogan {
         font-size: 32px;
     }
-
     .content #description {
         font-size: 16px;
     }
-
 }
