@@ -97,9 +97,12 @@ header {
 }
 .header-box {
     display: flex;
+    /* use flexbox to align the logo and navigation horizontally */
     align-items: center;
     max-width: 1200px;
     padding: 15px 30px;
+    /* 15 pixel top and bottom
+    30 pixel left and right */
     margin: auto;
 }
 .logo {
@@ -114,7 +117,7 @@ header #name {
 }
 
 /* Navigation */
-header nav {
+nav {
     display: flex;
     gap: 25px;
     margin-left: auto;
@@ -202,6 +205,13 @@ header nav a:hover {
 }
 .destination-card {
     flex: 1;
+    /* flex 1 allows the cards to grow and shrink equally */
+    /* It combines three different properties into one short line:
+    source: stack overflow  https://stackoverflow.com/questions/48522388/the-meaning-and-benefits-of-flex-1
+    flex-grow: 1;: The item will grow to fill extra space in the container.
+    flex-shrink: 1;: The item will shrink if the container gets too small.
+    flex-basis: 0%;: The item starts with a base size of zero, ignoring its natural content width */
+
     width: 100%;
     /* Allow the cards to grow and shrink equally */
     padding-bottom: 25px;
