@@ -8,11 +8,53 @@ description: Styles for 2602-cos10026-applied-web-project-1
 
 /* -------------------------
     Global styles and presets
-    - All elements
+    - all elements
+    - html
+    - custom properties
 ------------------------- */
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Custom properties */
+:root {
+    --light-grey: #ddd;
+    --charcoal-grey: #323232;
+    --terracotta: #B56B45;
+    --transparent-black: rgba(0, 0, 0, 0.1);
+
+    /* https://coolors.co/895053-12343b-e0f1f5-f0f8fa-ffffff-263238-f9c74f-fafaf7 */
+    --jet-black: #12343bff;
+    --azure-mist: #e0f1f5ff;
+    --alice-blue: #f0f8faff;
+    --white: #ffffffff;
+    --jet-black-2: #263238ff;
+    --tuscan-sun: #f9c74fff;
+    --porcelain: #fafaf7ff;
+
+    /* Brand palette */
+    --color-brand-dark: var(--jet-black);
+    --color-brand-light: var(--terracotta);
+    /* Text */
+    --color-text-headers: var(--jet-black);
+    --color-text-dark: var(--jet-black-2);
+    --color-text-dark-hover: var(--terracotta);
+    --color-text-light: var(--white);
+    --color-text-light-hover: var(--tuscan-sun);
+    --color-text-highlight: red;
+    /* Backgrounds */
+    --color-bg-header: var(--jet-black);
+    --color-bg-main: var(--alice-blue);
+    --color-bg-section: var(--white);
+    --color-bg-highlight: var(--alice-blue);
+    --color-bg-footer: var(--charcoal-grey);
+    /* Borders */
+    --color-border: var(--light-grey);
+    /* Shadows */
+    --color-shadow: var(--transparent-black);
 }
 
 /* -------------------------
@@ -72,17 +114,17 @@ header #name {
 }
 
 /* Navigation */
-nav {
+header nav {
     display: flex;
     gap: 25px;
     margin-left: auto;
 }
-nav a {
+header nav a {
     text-decoration: none;
     font-weight: bold;
     color: white;
 }
-nav a:hover {
+header nav a:hover {
     color: #F9C74F;
 }
 
@@ -224,6 +266,141 @@ td {
 .services .sers:hover {
     background-color: #F9C74F;
     text-decoration: underline;
+}
+
+/* -------------------------
+    jobs.html
+    - page layout
+        - page properties
+    - sidebar
+    - position cards
+        - header
+        - details
+    - email signup
+------------------------- */
+/* Page layout */
+#job-content {
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    margin: 0 15px;
+
+    background: var(--color-bg-main);
+    color: var(--color-text-dark);
+
+    /* Page properties */
+    --jobs-card-border: 1px solid var(--color-border);
+}
+#job-content h1,
+#job-content h2,
+#job-content h3 {
+    color: var(--color-text-headers);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Sidebar */
+#job-sidebar {
+    --top-height: 20px;
+    --bottom-height: 20px;
+    --vertical-margins: 10px;
+
+    order: 1;
+    position: sticky;
+    top: var(--top-height);
+    height: calc(100vh - var(--top-height) - var(--bottom-height) - var(--vertical-margins));
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#job-aside {
+    padding: 0.5rem 2rem;
+    border: var(--jobs-card-border);
+    border-radius: 12px;
+
+    flex: 1 1 auto;
+
+    background: var(--color-bg-section);
+}
+body:has(.job-highlight-ref:hover) .job-ref-id {
+    /* Highlight on hover inspired by:
+    https://stackoverflow.com/a/74816531
+    Accessed: 07 Sep 2026 */
+    font-weight: bold;
+    color: var(--color-text-highlight);
+}
+#jump-to-top {
+    color: var(--color-text-dark);
+    text-align: center;
+    padding: 0.5rem;
+    border: var(--jobs-card-border);
+    border-radius: 12px;
+    background: var(--color-bg-section);
+}
+
+/* Job position cards */
+#job-listings {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5em;
+}
+#job-listings h1 {
+    text-align: center;
+}
+.job-position {
+    /* Uses same styling as #job-aside */
+    padding: 0.5rem 2rem;
+    border: var(--jobs-card-border);
+    border-radius: 12px;
+
+    background: var(--color-bg-section);
+}
+
+/* Job header */
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.job-ref-id {
+    border: var(--jobs-card-border);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+
+    background: var(--color-bg-highlight);
+}
+.job-ref-id::before { content: "#"}
+
+/* Job details */
+.job-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+
+    color: var(--color-text-headers);
+}
+.job-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: var(--jobs-card-border);
+    border-radius: 4px;
+
+    padding: 1rem;
+    background: var(--color-bg-highlight);
+}
+.job-details dt {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Job email signup */
+.job-signup {
+    order: 2;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 /* -------------------------
