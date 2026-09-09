@@ -1,18 +1,15 @@
 /*
 filename: styles.css
-author: Anastasia Tiffany, Harper Lam, Nathan Yan and Son Khoi Nguyen
-created:  3 September 2026
-last modified: ?? September 2026
-description: lab05.html
+author: Anastasia Tiffany, Harper Lam, Nathan Yan, Son Khoi Nguyen
+created:  03 September 2026
+last modified: 09 September 2026
+description: Styles for 2602-cos10026-applied-web-project-1
 */
-<<<<<<< HEAD
-=======
 
 /* -------------------------
     Global styles and presets
     - All elements
 ------------------------- */
->>>>>>> 72ad70c (docs(styles): title global styles and presets)
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
