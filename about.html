@@ -7,6 +7,16 @@
         <meta name="keywords" content="HTML, about_page, team_members">
         <meta name="description" content="The introduction page to the members behind the webpage.">
         <link rel="stylesheet" href="styles/styles.css">
+        <style>
+            h1 {
+                color: #f9c74fff;
+                text-align: center;
+            }
+            h3 {
+                color: #895053ff;
+                font-size: 25px;
+            }
+        </style>
     </head>
 
     <body>
@@ -65,16 +75,59 @@
 
             <li> <h3>A Picture Of Us!</h3>
                 <figure>
-                    <img src="images/group.png" alt="A picture of us!" title="Group Photo"
+                    <img style="display: block; margin: 0 auto; width: 90%; height: 90%;"
+                         src="images/group.png" alt="A picture of us!" title="Group Photo"
                          width="1200"
                          height="900">
                 </figure>
             </li>
 
-            <li>Our fun facts!
+            <li> <h3>Our fun facts!</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Fun Fact 1</th>
+                            <th>Fun Fact 2</th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr>
+                            <th>Nathan</th>
+                            <th>Used to dream of becoming a ski instructor to travel the world, but never found the time to stack up enough experience</th>
+                            <th>Runs around in circles for eight hours a week, and spends around the same time doing flashcards (both as hobbies)</th>
+                        </tr>
+
+                        <tr>
+                            <th>Harper</th>
+                            <th>Nearly drown as a kid</th>
+                            <th>Had 8 stiches on her foot as a kid</th>
+                        </tr>
+
+                        <tr>
+                            <th>Tiffany</th>
+                            <th>Can recognize 85% of Asian countries by their flags most of the times</th>
+                            <th>Have a Spotify playlist that is over 75 hours</th>
+                        </tr>
+
+                        <tr>
+                            <th>Khoi</th>
+                            <th>Have ungodly skills to play rhythm games, along with a neverending hyperfixation on them</th>
+                            <th>Have met multiple popular celebrities in person and had their autographs</th>
+                        </tr>
+                    </tbody>
+
+                    <caption><strong>A Table Listing Our Fun Facts!</strong></caption>
+                </table>
             </li>
         </ol>
+
+        <br>
+
+        <p style="color: #895053ff; text-align: center;">We hope you have a good experience at our website!</p>
+
+        <br>
 
         <footer> 
             <p id="acknowledgements">World Wide Travel acknowledges the Traditional Owners, the Wurundjeri people of the Kulin Nation, on whose land we meet, share and work. We pay our respects to Elders past and present, and extend our respect to Aboriginal and Torres Strait Islander people from all nations of this land.We would like to acknowledge the Traditional Owners of the land on which we work and live, and pay our respects to their Elders past, present and emerging.</p>
