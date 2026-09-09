@@ -9,10 +9,14 @@ description: Styles for 2602-cos10026-applied-web-project-1
 /* -------------------------
     Global styles and presets
     - All elements
+    - html
 ------------------------- */
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 /* -------------------------
