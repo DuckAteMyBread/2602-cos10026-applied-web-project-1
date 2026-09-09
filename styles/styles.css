@@ -21,7 +21,7 @@ description: lab05.html
 footer {
 
       color: white;
-      background-color: #323232;
+      background-color: #263238;
       /* change colour later */
       padding: 20px; 
 }
@@ -229,7 +229,7 @@ nav {
 
 .services th {
     font-size: 18px;
-    color: #323232;
+    color: #263238;
 }
 
 th, td { 
@@ -248,23 +248,6 @@ th, td {
     /* hide extra border */
     border-spacing: 0;
     background-color: white;
-}
-
-.services h3 {
-    text-align: center;
-    font-size: 30px;
-    color: #12343B;
-}
-
-.services {
-   
-    background-color: #E0F1F5;
-    padding: 100px 30px;
-
-}
-
-.services .ser {
-    background-color: #FAFAF7;
 }
 
 .services .sers {
