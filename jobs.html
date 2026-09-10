@@ -8,6 +8,15 @@
         <meta name="description" content="Short & accurate description of the webpage.">
 
         <link rel="stylesheet" href="styles/styles.css">
+
+        <style>
+            body:has(.job-highlight-ref:hover) .job-ref-id {
+                /* Highlight on hover inspired by:
+                https://stackoverflow.com/a/74816531
+                Accessed: 07 Sep 2026 */
+                color: var(--color-text-highlight);
+            }
+        </style>
     </head>
     <body>
         <header id="site-header">
@@ -29,8 +38,10 @@
                 <aside id="job-aside">
                     <h2>Before you apply</h2>
                     <p>
-                        Review the position requirements and make sure you select the
-                        correct six-character <span class="job-highlight-ref" style="font-weight: bold;">job reference number</span>.
+                        Review the position requirements and make sure you select the correct six-character
+                        <span class="job-highlight-ref" style="font-weight: bold;">
+                            job reference number
+                        </span>.
                     </p>
                     <a href="apply.html">Start an application</a>
                 </aside>
