@@ -301,7 +301,7 @@ td {
 /* Page layout */
 #job-content {
     display: grid;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 30%;
     margin: 0 15px;
 
     background: var(--color-bg-main);
@@ -461,9 +461,22 @@ td {
     font-size: 15px;
     line-height: 1.5;
     }
-
-    
-
+    /* jobs.html responsive design */
+    #job-content {
+        grid-template-columns: 1fr;
+    }
+    #job-sidebar {
+        position: relative;
+        height: auto;
+        margin: 0;
+    }
+    #jump-to-top {
+        visibility: hidden;
+        height: 0;
+    }
+    #job-listings {
+        order: -1;
+    }
 }
 
 @media only screen and (max-width: 500px) {
