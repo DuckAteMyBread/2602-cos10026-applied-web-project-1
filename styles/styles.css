@@ -2,7 +2,7 @@
 filename: styles.css
 author: Anastasia Tiffany, Harper Lam, Nathan Yan, Son Khoi Nguyen
 created:  03 September 2026
-last modified: 09 September 2026
+last modified: 10 September 2026
 description: Styles for 2602-cos10026-applied-web-project-1
 */
 
@@ -294,7 +294,7 @@ td {
 /* Page layout */
 #job-content {
     display: grid;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 30%;
     margin: 0 15px;
 
     background: var(--color-bg-main);
@@ -334,6 +334,11 @@ td {
     flex: 1 1 auto;
 
     background: var(--color-bg-section);
+}
+#job-available {
+    /* Grid is used for flexibility in 2D where more jobs may be added */
+    display: grid;
+    grid-column: 1;
 }
 #jump-to-top {
     color: var(--color-text-dark);
@@ -448,6 +453,22 @@ td {
     text-align: center;
     font-size: 15px;
     line-height: 1.5;
+    }
+    /* jobs.html responsive design */
+    #job-content {
+        grid-template-columns: 1fr;
+    }
+    #job-sidebar {
+        position: relative;
+        height: auto;
+        margin: 0;
+    }
+    #jump-to-top {
+        visibility: hidden;
+        height: 0;
+    }
+    #job-listings {
+        order: -1;
     }
 }
 
