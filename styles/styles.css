@@ -117,10 +117,10 @@ header #name {
 }
 
 /* Navigation */
-nav {
+header #nav {
     display: flex;
     gap: 25px;
-    margin-left: auto;
+    margin: auto;
 }
 header nav a {
     text-decoration: none;
