@@ -342,6 +342,11 @@ td {
 
     background: var(--color-bg-section);
 }
+#job-available {
+    /* Grid is used for flexibility in 2D where more jobs may be added */
+    display: grid;
+    grid-column: 1;
+}
 #jump-to-top {
     color: var(--color-text-dark);
     text-align: center;
