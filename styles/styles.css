@@ -447,6 +447,18 @@ td {
         height: 250px;
     }
 
+    .social-icon {
+    min-width: 25px;
+    }
+
+    footer #acknowledgements {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    }
+
+    
+
 }
 
 @media only screen and (max-width: 500px) {
