@@ -98,9 +98,12 @@ header {
 .header-box {
     display: flex;
     /* use flexbox to align the logo and navigation horizontally */
+    /* use flexbox to align the logo and navigation horizontally */
     align-items: center;
     max-width: 1200px;
     padding: 15px 30px;
+    /* 15 pixel top and bottom
+    30 pixel left and right */
     /* 15 pixel top and bottom
     30 pixel left and right */
     margin: auto;
@@ -205,6 +208,13 @@ header nav a:hover {
 }
 .destination-card {
     flex: 1;
+    /* flex 1 allows the cards to grow and shrink equally */
+    /* It combines three different properties into one short line:
+    source: stack overflow  https://stackoverflow.com/questions/48522388/the-meaning-and-benefits-of-flex-1
+    flex-grow: 1;: The item will grow to fill extra space in the container.
+    flex-shrink: 1;: The item will shrink if the container gets too small.
+    flex-basis: 0%;: The item starts with a base size of zero, ignoring its natural content width */
+
     /* flex 1 allows the cards to grow and shrink equally */
     /* It combines three different properties into one short line:
     source: stack overflow  https://stackoverflow.com/questions/48522388/the-meaning-and-benefits-of-flex-1
@@ -332,13 +342,6 @@ td {
 
     background: var(--color-bg-section);
 }
-body:has(.job-highlight-ref:hover) .job-ref-id {
-    /* Highlight on hover inspired by:
-    https://stackoverflow.com/a/74816531
-    Accessed: 07 Sep 2026 */
-    font-weight: bold;
-    color: var(--color-text-highlight);
-}
 #jump-to-top {
     color: var(--color-text-dark);
     text-align: center;
@@ -443,6 +446,7 @@ body:has(.job-highlight-ref:hover) .job-ref-id {
     .destination img {
         height: 250px;
     }
+
 }
 
 @media only screen and (max-width: 500px) {
