@@ -310,6 +310,10 @@ td {
     /* Page properties */
     --jobs-card-border: 1px solid var(--color-border);
 }
+#job-content h1 {
+    height: 40px;
+    margin-block: 20px;
+}
 #job-content h1,
 #job-content h2,
 #job-content h3 {
@@ -360,7 +364,6 @@ td {
 #job-listings {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 2.5em;
 }
 #job-listings h1 {
     text-align: center;
@@ -425,6 +428,7 @@ td {
     Responsive design
     - small screens (to 800px)
     - very small screens (to 500px)
+    - short screens (vertically to 500px)
 ------------------------- */
 @media only screen and (max-width: 800px) {
     /* Responsive design for small screens up to 800px */
@@ -466,7 +470,7 @@ td {
         grid-template-columns: 1fr;
     }
     #job-sidebar {
-        position: relative;
+        position: static;
         height: auto;
         margin: 0;
     }
@@ -489,5 +493,18 @@ td {
     }
     .content #description {
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    /* Responsive design for short viewports up to 500px */
+    #job-sidebar {
+        position: static;
+        height: auto;
+        margin-top: 80px;
+    }
+    #job-available {
+        visibility: hidden;
+        height: 0;
     }
 }
