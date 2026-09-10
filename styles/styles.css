@@ -123,7 +123,7 @@ header #name {
 header #nav {
     display: flex;
     gap: 25px;
-    margin: auto;
+    margin-left: auto;
 }
 header nav a {
     text-decoration: none;
@@ -431,7 +431,7 @@ td {
         /* Adds logo-navigation spacing on smaller screens */
         margin: 10px 0;
     }
-    nav {
+    header #nav {
         /* Centre navigation links */
         flex-wrap: wrap;
         justify-content: center;
