@@ -215,13 +215,6 @@ footer #social {
     flex-shrink: 1;: The item will shrink if the container gets too small.
     flex-basis: 0%;: The item starts with a base size of zero, ignoring its natural content width */
 
-    /* flex 1 allows the cards to grow and shrink equally */
-    /* It combines three different properties into one short line:
-    source: stack overflow  https://stackoverflow.com/questions/48522388/the-meaning-and-benefits-of-flex-1
-    flex-grow: 1;: The item will grow to fill extra space in the container.
-    flex-shrink: 1;: The item will shrink if the container gets too small.
-    flex-basis: 0%;: The item starts with a base size of zero, ignoring its natural content width */
-
     width: 100%;
     /* Allow the cards to grow and shrink equally */
     padding-bottom: 25px;
@@ -428,7 +421,7 @@ td {
 ------------------------- */
 @media only screen and (max-width: 800px) {
     /* Responsive design for small screens up to 800px */
-    .header-box {
+    #site-header-container {
         /* Stack the logo and navigation vertically on smaller screens */
         flex-direction: column;
     }
@@ -436,7 +429,7 @@ td {
         /* Adds logo-navigation spacing on smaller screens */
         margin: 10px 0;
     }
-    #site-nav {
+    header #site-nav {
         /* Centre navigation links */
         flex-wrap: wrap;
         justify-content: center;
