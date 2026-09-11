@@ -300,9 +300,10 @@ td {
 ------------------------- */
 /* Page layout */
 #job-content {
+    padding: 15px 15px;
+
     display: grid;
     grid-template-columns: 1fr 30%;
-    margin: 0 15px;
 
     background: var(--color-bg-main);
     color: var(--color-text-dark);
@@ -324,18 +325,17 @@ td {
 /* Sidebar */
 #job-sidebar {
     --top-height: 20px;
-    --bottom-height: 20px;
-    --vertical-margins: 10px;
+    --vertical-margins: 20px;
 
     order: 1;
     position: sticky;
     top: var(--top-height);
-    height: calc(100vh - var(--top-height) - var(--bottom-height) - var(--vertical-margins));
+    height: calc(100vh - var(--top-height) - var(--vertical-margins));
     margin: 0 20px;
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--vertical-margins);
 }
 #job-aside {
     padding: 0.5rem 2rem;
@@ -364,13 +364,14 @@ td {
 #job-listings {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
+    row-gap: 15px;
 }
 #job-listings h1 {
     text-align: center;
 }
 .job-position {
     /* Uses same styling as #job-aside */
-    padding: 0.5rem 2rem;
+    padding: 0 2rem;
     border: var(--jobs-card-border);
     border-radius: 12px;
 
