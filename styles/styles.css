@@ -2,7 +2,7 @@
 filename: styles.css
 author: Anastasia Tiffany, Harper Lam, Nathan Yan, Son Khoi Nguyen
 created:  03 September 2026
-last modified: 10 September 2026
+last modified: 11 September 2026
 description: Styles for 2602-cos10026-applied-web-project-1
 */
 
@@ -21,40 +21,23 @@ html {
 }
 /* Custom properties */
 :root {
-    --light-grey: #ddd;
-    --charcoal-grey: #323232;
-    --terracotta: #B56B45;
-    --transparent-black: rgba(0, 0, 0, 0.1);
-
-    /* https://coolors.co/895053-12343b-e0f1f5-f0f8fa-ffffff-263238-f9c74f-fafaf7 */
-    --jet-black: #12343bff;
-    --azure-mist: #e0f1f5ff;
     --alice-blue: #f0f8faff;
     --white: #ffffffff;
+    --jet-black: #12343bff;
     --jet-black-2: #263238ff;
-    --tuscan-sun: #f9c74fff;
-    --porcelain: #fafaf7ff;
 
-    /* Brand palette */
-    --color-brand-dark: var(--jet-black);
-    --color-brand-light: var(--terracotta);
     /* Text */
     --color-text-headers: var(--jet-black);
     --color-text-dark: var(--jet-black-2);
-    --color-text-dark-hover: var(--terracotta);
-    --color-text-light: var(--white);
-    --color-text-light-hover: var(--tuscan-sun);
-    --color-text-highlight: red;
+    --color-text-link-dark: var(--jet-black-2);
+    --color-text-link-dark-hover: var(--jet-black);
     /* Backgrounds */
-    --color-bg-header: var(--jet-black);
     --color-bg-main: var(--alice-blue);
     --color-bg-section: var(--white);
     --color-bg-highlight: var(--alice-blue);
-    --color-bg-footer: var(--charcoal-grey);
     /* Borders */
     --color-border: var(--light-grey);
-    /* Shadows */
-    --color-shadow: var(--transparent-black);
+    --color-border-highlight: var(--jet-black);
 }
 
 /* -------------------------
@@ -292,6 +275,7 @@ td {
     jobs.html
     - page layout
         - page properties
+    - shared card styling (position and sidebar)
     - sidebar
     - position cards
         - header
@@ -300,78 +284,94 @@ td {
 ------------------------- */
 /* Page layout */
 #job-content {
+    padding: 15px 15px;
+
     display: grid;
-    grid-template-columns: 1fr 30%;
-    margin: 0 15px;
+    grid-template-columns: 1fr 28%;
 
     background: var(--color-bg-main);
     color: var(--color-text-dark);
 
     /* Page properties */
+    --vertical-margins: 20px;
     --jobs-card-border: 1px solid var(--color-border);
+    --jobs-card-border-highlight: 1px dotted var(--color-border-highlight);
+    --jobs-card-radius-s: 4px;
+    --jobs-card-radius-m: 4px;
+    --jobs-card-radius-l: 12px;
+}
+#job-content > * {
+    margin: 0 10px;
+}
+#job-content h1 {
+    height: 40px;
+    margin: 20px 0;
 }
 #job-content h1,
 #job-content h2,
 #job-content h3 {
     color: var(--color-text-headers);
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
+#job-content a {
+    color: var(--color-text-link-dark);
+}
+#job-content a:hover {
+    color: var(--color-text-link-dark-hover);
+    font-style: italic;
+}
+
+/* Cards */
+#job-sidebar > *,
+.job-position
+{
+    padding: 0 1.5rem 2rem 1.5rem;
+    border: var(--jobs-card-border);
+    border-radius: var(--jobs-card-radius-l);
+
+    background: var(--color-bg-section);
+}
+
+
 /* Sidebar */
 #job-sidebar {
     --top-height: 20px;
-    --bottom-height: 20px;
-    --vertical-margins: 10px;
 
     order: 1;
     position: sticky;
     top: var(--top-height);
-    height: calc(100vh - var(--top-height) - var(--bottom-height) - var(--vertical-margins));
-    margin: 0 20px;
+    height: calc(100vh - var(--top-height) - var(--vertical-margins));
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    row-gap: var(--vertical-margins);
 }
-#job-aside {
-    padding: 0.5rem 2rem;
-    border: var(--jobs-card-border);
-    border-radius: 12px;
 
-    flex: 1 1 auto;
-
-    background: var(--color-bg-section);
-}
 #job-available {
     /* Grid is used for flexibility in 2D where more jobs may be added */
     display: grid;
     grid-column: 1;
+}
+#job-apply-note {
+    flex-grow: 1;
 }
 #jump-to-top {
     color: var(--color-text-dark);
     text-align: center;
     padding: 0.5rem;
     border: var(--jobs-card-border);
-    border-radius: 12px;
+    border-radius: var(--jobs-card-radius-l);
     background: var(--color-bg-section);
 }
 
-/* Job position cards */
+/* Job position card layout */
 #job-listings {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    gap: 2.5em;
+    row-gap: var(--vertical-margins);
 }
 #job-listings h1 {
     text-align: center;
-}
-.job-position {
-    /* Uses same styling as #job-aside */
-    padding: 0.5rem 2rem;
-    border: var(--jobs-card-border);
-    border-radius: 12px;
-
-    background: var(--color-bg-section);
 }
 
 /* Job header */
@@ -383,7 +383,7 @@ td {
 .job-ref-id {
     border: var(--jobs-card-border);
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: var(--jobs-card-radius-s);
 
     background: var(--color-bg-highlight);
 }
@@ -392,7 +392,7 @@ td {
 /* Job details */
 .job-details {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template: auto / 1fr 1fr;
     gap: 0.5rem;
     margin: 1.5rem 0;
 
@@ -404,27 +404,26 @@ td {
     align-items: center;
 
     border: var(--jobs-card-border);
-    border-radius: 4px;
+    border-radius: var(--jobs-card-radius-m);
 
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     background: var(--color-bg-highlight);
 }
 .job-details dt {
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 /* Job email signup */
 .job-signup {
     order: 2;
     text-align: center;
-    margin-bottom: 50px;
 }
 
 /* -------------------------
     Responsive design
     - small screens (to 800px)
     - very small screens (to 500px)
+    - short screens (vertically to 500px)
 ------------------------- */
 @media only screen and (max-width: 800px) {
     /* Responsive design for small screens up to 800px */
@@ -466,16 +465,20 @@ td {
         grid-template-columns: 1fr;
     }
     #job-sidebar {
-        position: relative;
+        position: static;
         height: auto;
         margin: 0;
     }
-    #jump-to-top {
+    #jump-to-top,
+    #job-available {
         visibility: hidden;
         height: 0;
     }
     #job-listings {
         order: -1;
+    }
+    .job-details {
+        grid-template: 1fr 1fr / auto;
     }
 }
 
@@ -489,5 +492,18 @@ td {
     }
     .content #description {
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    /* Responsive design for short viewports up to 500px */
+    #job-sidebar {
+        position: static;
+        height: auto;
+        margin-top: 80px;
+    }
+    #job-available {
+        visibility: hidden;
+        height: 0;
     }
 }
