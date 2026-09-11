@@ -337,12 +337,10 @@ td {
     flex-direction: column;
     gap: var(--vertical-margins);
 }
-#job-aside {
+#job-sidebar > * {
     padding: 0.5rem 2rem;
     border: var(--jobs-card-border);
     border-radius: 12px;
-
-    flex: 1 1 auto;
 
     background: var(--color-bg-section);
 }
@@ -350,6 +348,9 @@ td {
     /* Grid is used for flexibility in 2D where more jobs may be added */
     display: grid;
     grid-column: 1;
+}
+#job-apply-note {
+    flex: 1 1 auto;
 }
 #jump-to-top {
     color: var(--color-text-dark);
