@@ -45,6 +45,8 @@ html {
     --color-text-light: var(--white);
     --color-text-light-hover: var(--tuscan-sun);
     --color-text-highlight: var(--jet-black);
+    --color-text-link-dark: var(--jet-black-2);
+    --color-text-link-dark-hover: var(--jet-black);
     /* Backgrounds */
     --color-bg-header: var(--jet-black);
     --color-bg-main: var(--alice-blue);
@@ -324,6 +326,14 @@ td {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
+#job-content a {
+    color: var(--color-text-link-dark);
+}
+#job-content a:hover {
+    color: var(--color-text-link-dark-hover);
+    font-weight: bold;
+}
+
 /* Sidebar */
 #job-sidebar {
     --top-height: 20px;
