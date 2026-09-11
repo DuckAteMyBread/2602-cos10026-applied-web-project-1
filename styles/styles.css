@@ -474,12 +474,17 @@ td {
         height: auto;
         margin: 0;
     }
-    #jump-to-top {
+    #jump-to-top,
+    #job-available {
         visibility: hidden;
         height: 0;
     }
     #job-listings {
         order: -1;
+    }
+    .job-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
