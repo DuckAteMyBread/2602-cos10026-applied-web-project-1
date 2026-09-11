@@ -44,7 +44,7 @@ html {
     --color-text-dark-hover: var(--terracotta);
     --color-text-light: var(--white);
     --color-text-light-hover: var(--tuscan-sun);
-    --color-text-highlight: red;
+    --color-text-highlight: var(--jet-black);
     /* Backgrounds */
     --color-bg-header: var(--jet-black);
     --color-bg-main: var(--alice-blue);
@@ -53,6 +53,7 @@ html {
     --color-bg-footer: var(--charcoal-grey);
     /* Borders */
     --color-border: var(--light-grey);
+    --color-border-highlight: var(--jet-black);
     /* Shadows */
     --color-shadow: var(--transparent-black);
 }
@@ -310,6 +311,7 @@ td {
 
     /* Page properties */
     --jobs-card-border: 1px solid var(--color-border);
+    --jobs-card-border-highlight: 1px dotted var(--color-border-highlight);
 }
 #job-content h1 {
     height: 40px;
